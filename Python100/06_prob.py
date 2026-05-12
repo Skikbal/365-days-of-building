@@ -1,6 +1,5 @@
-# program to generate a random number
-
+# program a dice roller for ludo
 import random
 
-number = random.randint(0,10)
-print(number)
+diceOutput = random.randint(1,6)
+print("The output for your roll: ",diceOutput)
