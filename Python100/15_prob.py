@@ -1,3 +1,4 @@
+# finding factorial of a number
 number = int(input("Enter the input "))
 
 if number == 0:
