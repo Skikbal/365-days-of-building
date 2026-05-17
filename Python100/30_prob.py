@@ -1,16 +1,12 @@
-# program to make a simple calculator
+# program to display fibonacci series using recurssion
 
-num1 = float(input("Enter the first number: "))
-num2 = float(input("Enter the second number: "))
-operator = input("Enter the operator: ")
+def fibonacci(num):
+    if num <= 1:
+        return num
+    else:
+        return fibonacci(num-1) + fibonacci(num-2)
 
-if operator == "+":
-    print(num1 + num2)
-elif operator == "-":
-    print(num1 - num2)
-elif operator == "*":
-    print(num1 * num2)
-elif operator == "/":
-    print(num1 / num2)
-else:
-    print("Invalid operator")
+nterms = int(input("Enter the number of terms: "))
+
+for i in range(nterms):
+    print(fibonacci(i))
