@@ -1,22 +1,20 @@
-class MyClass:
-    var1 = "ikbal"
-    var2 = "ali"
+class car: # blueprint / bundle
+    wheels = 4 # class attribute
+    body= "metal"
     
-    def __init__(self,dyn1,dyn2,dyn3):
-        #Instance variables
-        self.dyn1 = dyn1
-        self.dyn2 = dyn2
-        self.dyn3 = dyn3
-    def func1(self):
-        print(f"hello world, {self.dyn1}")
-    
-    def func2(self):
-        print(f"hello world, {self.dyn2}")
+    # constructor
+    def __init__(self,color,make):
+        self.color = color # instance attribute
+        self.make = make
+    # class methods
+    def start(self):
+        print("started")
         
-    def func3(self):
-        print(f"hello world, {self.dyn3}")        
-        
-        
-obj = MyClass("Ansh","Ali","Bal")
-obj.func1()
-        
+    def stop(self):
+        print("stopped")
+
+car1 = car("red","bmw")  # object
+print(car1.color)
+print(car1.make)
+car1.start()
+car1.stop()
